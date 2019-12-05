@@ -16,15 +16,15 @@ $digits = function(int $length)
 class Sequence
 {
     public $m;
-    public $el;
-    public $seq = [];
+    public $element;
+    public $result = [];
 
     public function __construct($m)//
     {
         $this->m = $m;
     }
 
-    public function add($el) {
+    public function add($element) {
         array_push($this->seq, "$el");
     }
 
